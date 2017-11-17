@@ -1,0 +1,18 @@
+Command Qmail
+
+1) Voir les stat file d'attente
+/var/qmail/bin/qmail-qstat
+
+
+2) Voir la file d'attente
+# /var/qmail/bin/qmail-qread
+
+3) À partir de la commande qread, vous obtenez l'identifiant du message. (dans le cas présent 111111)
+# find /var/qmail/queue -iname 111111
+
+/var/qmail/queue/remote/22/111111
+
+/var/qmail/queue/mess/22/111111
+
+/var/qmail/queue/info/22/111111
+
